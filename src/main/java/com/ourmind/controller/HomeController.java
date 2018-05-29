@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping(value = "/")
 public class HomeController {
 
-    @RequestMapping(value = "/",method = RequestMethod.GET)
-    @ResponseBody
+    @RequestMapping(value = "login",method = RequestMethod.GET)
     public String index(){
-        return "Hello Soring MVC!";
+        return "login";
     }
 }
